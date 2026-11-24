@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brian Mwanzia · Civil Engineer × AI Portfolio</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1c2321;--mute:#5d6762;--line:#dcd8cd;--acc:#b4531f;--acc2:#1f6f5c;--chip:#efeadd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--card:#1d2321;--ink:#ece9e1;--mute:#a1aaa4;--line:#323a37;--acc:#e0884f;--acc2:#5fc1a5;--chip:#28302d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141816;--card:#1d2321;--ink:#ece9e1;--mute:#a1aaa4;--line:#323a37;--acc:#e0884f;--acc2:#5fc1a5;--chip:#28302d;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:980px;margin:0 auto;padding:28px 20px 60px}
+h1,h2,h3,.mono{font-family:"Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.1;margin:8px 0 12px;letter-spacing:-.02em}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--acc);margin:48px 0 14px}
+h3{font-size:19px;margin:0 0 6px}
+.lead{font-size:19px;color:var(--mute);max-width:680px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.tag{display:inline-block;font:12px "Helvetica Neue",Arial,sans-serif;background:var(--chip);border-radius:20px;padding:2px 10px;margin:0 4px 6px 0;color:var(--mute)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.stat{border-left:3px solid var(--acc2);padding:2px 10px}
+.stat b{display:block;font:700 22px "Helvetica Neue",Arial,sans-serif}
+.stat span{font-size:13px;color:var(--mute)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:14px "Helvetica Neue",Arial,sans-serif;min-width:520px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:600}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 16px 16px 58px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;font:700 14px/28px "Helvetica Neue",Arial,sans-serif;text-align:center}
+.steps b{font-family:"Helvetica Neue",Arial,sans-serif}
+.note{border-left:3px solid var(--acc);padding:4px 14px;color:var(--mute);margin-top:16px}
+footer{margin-top:50px;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="mono" style="color:var(--mute);font-size:14px">Brian Mutava Mwanzia · Civil Engineering · JKUAT</div>
+<h1>Engineering judgement first.<br>AI as a fast, checkable collaborator.</h1>
+<p class="lead">Structural design, plastic and yield-line theory, plate mechanics, and a materials-testing thesis. This page shows the work, and the way I use AI to get through it quicker without handing over responsibility for the answer.</p>
+
+<h2>Selected work</h2>
+<div class="grid">
+<div class="card"><span class="tag">Eurocode 2</span><span class="tag">BS 5400</span><span class="tag">Moment distribution</span>
+<h3>Single-cell box culvert</h3>
+<p>3.0 m × 2.0 m section, 600 mm fill, HA traffic loading with KEL, saturated-soil design case. Full chain: load takedown, frame analysis, flexure, shear, and crack width.</p>
+<div class="stats"><div class="stat"><b>71 kNm</b><span>top slab Mmax</span></div><div class="stat"><b>T20-150</b><span>top steel</span></div><div class="stat"><b>0.23 mm</b><span>wall crack width (limit 0.25)</span></div></div></div>
+
+<div class="card"><span class="tag">Eurocode 2</span><span class="tag">Indeterminate frame</span><span class="tag">SLS</span>
+<h3>Twin-cell box culvert</h3>
+<p>Two 2.4 m cells, 5.7 m overall. Middle wall carries axial load only; outer walls take lateral earth and water pressure. Eleven-cycle moment distribution at ultimate and service.</p>
+<div class="stats"><div class="stat"><b>113 kNm</b><span>bottom slab support</span></div><div class="stat"><b>T25-125</b><span>bottom steel</span></div><div class="stat"><b>402 kN/m</b><span>middle wall axial</span></div></div></div>
+
+<div class="card"><span class="tag">Research</span><span class="tag">Lab testing</span><span class="tag">BS 5628</span>
+<h3>Cement-clay mortar for block joining</h3>
+<p>Final-year project with Martin Kyalo Ndunda. Five mixes (0–20% cement) tested for flow, setting time and 7/14/28-day cube strength, after characterising the clay (LL 45.02%, PL 26.31%, PI 18.71%).</p>
+<div class="stats"><div class="stat"><b>20%</b><span>best cement ratio</span></div><div class="stat"><b>95.2%</b><span>flow, Mix E</span></div><div class="stat"><b>3.5 N/mm²</b><span>peak strength</span></div></div></div>
+
+<div class="card"><span class="tag">Theory</span><span class="tag">Study notes</span>
+<h3>Advanced structural analysis</h3>
+<p>Worked notes on plastic analysis (hinges, shape factor, collapse mechanisms for beams and portals), yield-line analysis of one-way and two-way slabs, and elastic plates and shells (circular plates, clamped vs simply supported).</p>
+<p style="margin:0;color:var(--mute);font-size:14px">These give me the collapse-load and plate formulas I use to sanity-check numerical output.</p></div>
+</div>
+
+<h2>Single cell vs twin cell: one method, two answers</h2>
+<div class="card scroll"><table>
+<tr><th>Item</th><th>Single cell</th><th>Twin cell</th></tr>
+<tr><td>Top slab design moment</td><td>71.18 kNm (span)</td><td>93.92 kNm (support C)</td></tr>
+<tr><td>Top slab steel</td><td>T20-150 (2094 mm²/m)</td><td>T25-175 (2805 mm²/m)</td></tr>
+<tr><td>Bottom slab design moment</td><td>91.53 kNm (span)</td><td>113.08 kNm (support D)</td></tr>
+<tr><td>Bottom slab steel</td><td>T25-175 (2805 mm²/m)</td><td>T25-125 (3927 mm²/m)</td></tr>
+<tr><td>Outer wall steel (near face)</td><td>T12-150</td><td>T12-125</td></tr>
+<tr><td>Slab shear utilisation</td><td>171.7 / 177.6 kN (97%)</td><td>190.2 / 195.0 kN (98%)</td></tr>
+</table></div>
+<p class="note">Shear in both top slabs sits at about 97–98% of V<sub>Rd,c</sub>. That is a pass, but the margin is thin, and it is the first thing I would revisit if loads or cover change.</p>
+
+<h2>How I use AI</h2>
+<ol class="steps">
+<li><b>Set up the problem myself.</b> I choose the code, the load cases, the structural model and the assumptions (soil saturated, 1 m strip, fixed-end frame). AI never decides these for me.</li>
+<li><b>Let AI do the repetitive arithmetic.</b> Load takedowns, moment-distribution cycles, neutral-axis quadratics and reinforcement tables are laid out as calculation sheets with references beside each line, so every number can be traced.</li>
+<li><b>Check it against theory.</b> Reactions must sum to the applied load, frame moments must balance at joints, and results get compared with the closed-form cases from my plastic-analysis and plate notes.</li>
+<li><b>Interrogate the output.</b> I ask the AI to explain each clause used, challenge my reinforcement choices, and flag anything close to a limit (like the crack width of 0.23 mm against 0.25 mm).</li>
+<li><b>Own the sign-off.</b> Drawings, details and final decisions are mine. The AI speeds up the working, and I am accountable for the result.</li>
+</ol>
+
+<h2>Where AI helps, and where it doesn’t</h2>
+<div class="grid">
+<div class="card"><h3>Good use</h3><p>Drafting calculation sheets, cross-checking hand results, explaining code clauses, structuring a report, and turning lecture notes into worked examples.</p></div>
+<div class="card"><h3>Not trusted blindly</h3><p>Code clause numbers, partial factors, site-specific loading and anything that goes to construction. These get verified against the standard itself.</p></div>
+</div>
+
+<h2>Contact</h2>
+<div class="card"><h3>Brian Mutava Mwanzia</h3><p style="margin:0">BSc Civil Engineering, Jomo Kenyatta University of Agriculture and Technology.<br>Email: <a href="mailto:brianmutava931@gmail.com" style="color:var(--acc)">brianmutava931@gmail.com</a></p></div>
+
+<footer>Calculation sheets dated 3 November 2026. Figures on this page are taken directly from those sheets and the thesis report. All calculations are student work and require independent checking before any real-world use.</footer>
+</div>
+</body>
+</html>
